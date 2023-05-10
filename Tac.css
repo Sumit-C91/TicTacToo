@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Roboto+Serif:wght@200;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: rgb(41, 57, 107);
+    height: 40px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Serif', serif;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.GameContainer {
+    display: flex;
+    background-image: url("https://wallpaperaccess.com/full/2181692.jpg");
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    font-family: 'Roboto Serif', serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.Excited img {
+    width: 0vw;
+    transition: width 1s ease-in-out;
+}
+
+
+@media screen and (min-width: 480px) {
+    .GameContainer {
+        flex-wrap: wrap;
+    }
+
+    .info {
+        margin-top: 34px;
+        color: rgb(173, 0, 58);
+        font-size: 60px;
+    }
+}
+
+#win-line {
+    position: absolute;
+    z-index: 5;
+    pointer-events: none;
+}
